@@ -32,10 +32,11 @@ $(function() {
          * in the allFeeds object and ensures it has a URL defined
          * and that the URL is not empty.
          */
-        it('has a URL defined and not null',function(){
+        it('has a url defined and not null',function(){
            for (i in allFeeds)
                {
-                expect(allFeeds[i].URL).toBeDefined();
+                expect(allFeeds[i].url).toBeDefined();
+            
                }
            });
           
@@ -48,7 +49,7 @@ $(function() {
            for (i in allFeeds)
                {
                 expect(allFeeds[i].name).toBeDefined();
-                expect(allFeeds[i].name).toBe("");
+              
     }
          });
 
@@ -111,7 +112,7 @@ describe('Initial Entries',function()
                  
                  beforeEach(function(done)
                             {
-                     loadfeed(0,function(){      
+                     loadFeed(0,function(){      
          feed = $('.header-title').html();
           loadFeed(1, function()
                    { 
@@ -123,7 +124,8 @@ describe('Initial Entries',function()
 
 
        it('Feed change at reload',
-          function(){
+          function()
+          {
            expect(feed).not.toEqual(newfeed);
        });
      });
