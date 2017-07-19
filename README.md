@@ -4,7 +4,8 @@ In this project you are given a web-based application that reads RSS feeds. The 
 
 # How to access the file?
 
-We need to first Clone and download the repository . Then click on index.html to use the file and get the lastest updates.
+* We need to first Clone and download the repository .
+* Then click on index.html to use the file and get the lastest updates.
 
 ## Why this Project?
 
